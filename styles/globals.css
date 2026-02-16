@@ -1,17 +1,1 @@
 @import "tailwindcss";
-
-/* ใช้ธีมของ Tailwind ในการจัดการ Font (v4 style) */
-@theme {
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-}
-
-/* Tailwind v4 จะจัดการ padding: 0, margin: 0 
-  และ box-sizing: border-box ให้โดยอัตโนมัติผ่าน Preflight (Base styles)
-*/
-
-@layer base {
-  a {
-    @apply text-inherit no-underline;
-  }
-}
