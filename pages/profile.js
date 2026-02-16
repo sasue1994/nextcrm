@@ -15,19 +15,7 @@ export default function Profile() {
 
   return (
     <section>
-      <Head>
-        <title>My Profile</title>
-      </Head>
-      <h1>Profile</h1>
-      <div>
-        {profile.pictureUrl && <Image
-          src={profile.pictureUrl}
-          alt={profile.displayName}
-          width={500}
-          height={500}
-        />}
-        <div>Name: {profile.displayName}</div>
-      </div>
+
     </section>
   )
 }
