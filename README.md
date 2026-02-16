@@ -1,30 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📱 LIFF CRM (Next.js 16 + Tailwind CSS v4)
 
-## Getting Started
+พัฒนาด้วย **Next.js 16 (App Router) และ **Tailwind CSS v4**
 
-First, run the development server:
+## 🛠 เทคโนโลยีที่ใช้ (Tech Stack)
+* **Frontend Framework**: [Next.js 16](https://nextjs.org/) (App Router)
+* **Library**: [React 19](https://react.dev/)
+* **Styling**: [Tailwind CSS v4](https://tailwindcss.com/), [PostCSS 8](https://postcss.org/)
+* **Development Engine**: Turbopack (รันด้วย `--turbo`)
 
-```bash
+## 📁 โครงสร้างโปรเจกต์ (Project Structure)
+โครงสร้างโปรเจกต์จัดวางตามมาตรฐาน Next.js App Router:
+```text
+NEXTCRM/
+├── app/                # โฟลเดอร์หลักสำหรับจัดการ Routing และ Layout
+│   ├── layout.js       # โครงสร้างหลักของเว็บ (Sidebar, Header, Global CSS)
+│   ├── page.js         # หน้าแรก (Dashboard)
+│   ├── profile/        # หน้าข้อมูลส่วนตัว (เชื่อมต่อกับ LIFF)
+│   └── api/            # ส่วนจัดการ Backend API และ Route Handlers
+├── components/         # UI Components ย่อยที่นำมาใช้ซ้ำ (Header, SidebarItem)
+├── styles/             # เก็บไฟล์ Global CSS และการตั้งค่า Tailwind
+└── public/             # เก็บไฟล์ Static เช่น รูปภาพและไอคอนต่าง ๆ
+
+## 🚀 การเริ่มต้นใช้งาน (Getting Started)
+ทำตามขั้นตอนด้านล่างนี้เพื่อตั้งค่าโปรเจกต์และเริ่มพัฒนาในเครื่องของคุณ:
+
+### 1. การเตรียมความพร้อม (Prerequisites)
+* ตรวจสอบว่าเครื่องของคุณติดตั้ง **Node.js** เวอร์ชัน 18.17.0 ขึ้นไป.
+
+### 2. การติดตั้ง Dependencies
 npm install
-npm install @line/liff
 
-test
-npm run-script build
-npm start
+### 3. เริ่มรันโปรเจกต์ (Development)
+รันโปรเจกต์ด้วยโหมด Turbopack เพื่อความรวดเร็วในการคอมไพล์:
 
-```
+Bash
+npm run dev
+จากนั้นเปิด Browser ไปที่ http://localhost:3000.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
